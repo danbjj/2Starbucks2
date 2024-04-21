@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@300&family=Poppins:wght@200;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <title>2Starbucks2</title>
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <a href="cafe.html">
+        <img src="./img/logo.png" alt="logo" class="logo"></a>
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h1>Não é apenas um Café,<br> é um <span>Starbucks!</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum corrupti odit aperiam illum odio
+                voluptatum
+                ea nisi iure vero.
+                Neque tempore sequi nisi, enim vel omnis cumque delectus odit</p>
+
+            <button>Leia mais...</button>
+
+        </div>
+        <div class="caixa-imagem">
+            <img src="img/img1.png" alt="copo-grande1" class="starbucks">
+        </div>
+    </div>
+    <div class="menu">
+
+        <img src="img/img-pequena1.png" alt="copo-pequeno1" class="copo-menu" onclick="trocaImagem('img/img1.png');trocaCor(' #017143')">
+        <img src="img/img-pequena2.png" alt="copo-pequeno2" class="copo-menu" onclick="trocaImagem('img/img2.png');trocaCor('#eb7495' )">
+        <img src="img/img-pequena3.png" alt="copo-pequeno3" class="copo-menu" onclick="trocaImagem('img/img3.png');trocaCor('#d752b1' )">
+
+    </div>
+
+
+
+
+</body>
+<script>
+    let imagem = document.querySelector(".starbucks")
+    let circulo = document.querySelector(".circulo")
+    function trocaImagem(endereco) {
+        imagem.src= endereco
+
+    }
+    function trocaCor (cor) {
+        circulo.style.background = cor
+
+    }
+
+   
+</script>
+
+</html>
